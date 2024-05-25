@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài thực hành 05</title>
+</head>
+<body>
+    <script>
+        let numbers=[1,5,8,7,9,6,5,41,2,6,55,4,8];
+       for (let i = 0; i < numbers.length; i++) {
+          for (let j = 0; j < numbers.length -1; j++) {
+            if (numbers[j]>numbers[j+1]){
+                let temp = numbers[j];
+                numbers[j] = numbers[j+1];
+                numbers[j+1] = temp;
+            }
+            
+            
+          }
+        
+       }
+       console.log('Kết quả là :' + numbers);
+
+       
+    </script>
+</body>
+</html>

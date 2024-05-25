@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài thực hành số 04
+    </title>
+</head>
+<body>
+    <script>
+        let inputString=prompt('mời nhập');
+    let outputString='';
+    for (let i = 0; i < inputString.length; i++) {
+        let text=inputString[i];
+        if (text>='a' && text<='z') {
+            outputString += text.toUpperCase();
+        } else if(text>='A' && text<='Z'){
+            outputString += text.toLowerCase();
+        }else{
+               outputString += text;
+        }
+    }
+    console.log( 'Kết quả là :' + outputString);
+    </script>
+</body>
+</html>
